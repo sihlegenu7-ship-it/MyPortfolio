@@ -1,7 +1,8 @@
-.img-row {
+img-row {
     display: flex;
     justify-content: center;
     gap: 100px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -146,11 +147,6 @@ body.dark-mode .button, body.dark-mode .btn {
     padding: 5px;
     width: 20%;
     border-radius: 5px;
-    .contacttable {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     box-sizing: border-box;
 }
 
@@ -158,6 +154,7 @@ body.dark-mode .button, body.dark-mode .btn {
     min-height: 100px;
     resize: vertical;
 }
+
 
 button {
     padding: 10px 20px;
@@ -171,7 +168,17 @@ button {
 button:hover {
     background-color: #026fa1;
 }
-}
 
+@media (max-width: 480px) {
+    .img-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img-box img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
 
 
