@@ -1,167 +1,91 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> Personal Portfolio Website with Interactive Features Contacts</title>
-
-  <link rel="stylesheet" href="../css/style.css"></link>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sihle Genu</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
-
-
-
 <body>
-   <ul>
-    <div class="menu">
-  <a href="./index.html">Home</a>
-  <a href="./about.html">About</a>
-  <a href="./contacts.html">Contact</a>
-  <a href="./projects.html">Projects</a>
-   </ul>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="brand">Sihle <span>Genu</span></div>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a class="active" href="./contacts.html">Contact</a>
+      </div>
+      <button id="mode-toggle" class="mode-toggle" type="button">Mode</button>
+    </nav>
+  </header>
 
-<button id="mode-toggle">Mode</button>
+  <main class="page-shell">
+    <section class="section">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p>Let’s connect and explore opportunities.</p>
+      </div>
 
-<h2 class="contact-heading"><a>You can contact me on the following:</a></h2>
-<table style="width:1000" ; style= "height:1000"; class = "contact-box">
- 
-  <tr>
-    <th>Work Cell number :</th>
-          <th>0732723384</th>
-  </tr>
-  <tr>
-    <th>Personal Cell number :</th>
-            <th>0665205540</th>
+      <div class="contact-grid">
+        <aside class="contact-card">
+          <h3>Reach Me</h3>
+          <ul class="contact-list">
+            <li>
+              <strong>Work Cell</strong>
+              +27 73 272 3384
+            </li>
+            <li>
+              <strong>Personal Cell</strong>
+              +27 66 520 5540
+            </li>
+            <li>
+              <strong>Work Email</strong>
+              <a href="mailto:sihle@afrigis.co.za">sihle@afrigis.co.za</a>
+            </li>
+            <li>
+              <strong>Personal Email</strong>
+              <a href="mailto:sihlegenu23@icloud.com">sihlegenu23@icloud.com</a>
+            </li>
+          </ul>
+        </aside>
 
-  </tr>
-  <tr>
-    <th>Work Email address :</th>
-    <td><a href="mailto:sihle@afrigis.co.za">sihle@afrigis.co.za</a></td>
-  </tr>
-  <tr>
-    <th>Personal Email address :</th>
-    <td><a href="mailto:sihlegenu23@icloud.com">sihlegenu23@icloud.com</a></td>
-  </tr>
-  </p>
-</table>
-<div class = "contacttable">
+        <div class="form-panel">
+          <h3>Send a message</h3>
+          <form id="contact-form">
+            <div class="form-row">
+              <label>
+                Full Name
+                <input type="text" name="name" placeholder="Enter your full name" required />
+              </label>
+              <label>
+                Cell Number
+                <input type="tel" name="cell" placeholder="Enter your phone number" required />
+              </label>
+            </div>
 
-<form id="contact-form">
-  <table border="1" cellpadding="10">
-    <tr>
-      <td>Name and Surname:</td>
-      <td><input type="text" name="name" class="contacttable" placeholder="Enter your full name" required></td>
-    </tr>
+            <label>
+              Your Message
+              <textarea name="query" placeholder="Tell me about your project or inquiry" required></textarea>
+            </label>
 
-    <tr>
-      <td>Cell Number:</td>
-      <td><input type="tel" name="cell" class="contacttable" placeholder="Enter your phone number" required></td>
-    </tr>
+            <button class="submit-btn" type="submit">Submit</button>
+          </form>
+          <p class="success-message" id="success-message">Form submitted successfully!</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <tr>
-      <td>Query Request:</td>
-      <td><textarea name="query" class="contacttable" placeholder="Enter your query" required></textarea></td>
-    </tr>
-
-    <tr>
-      <td colspan="2" style="text-align:center;">
-        <button type="submit">Submit</button>
-      </td>
-    </tr>
-  </table>
-</form>
-<p id="success-message" style="color: green; text-align:center; display:none;">
-    Form submitted successfully!
-  </p>
-</div>
-<style>
-.contact-box {
-    width: 600px;                
-    margin: 20px 0;
-    border-collapse: collapse;
-    background-color: #082b52;     
-    color: #fff;                   
-    border-radius: 10px;           
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.945); 
-}
-
-.contact-box th, .contact-box td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid rgba(255,255,255,0.3); 
-}
-
-.contact-box th {
-    width: 200px;
-    font-weight: bold;
-}
-
-.contact-box a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.contact-box a:hover {
-    color: #ddd;
-}
-</style>
-<style>
-.contact-heading {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #03264d;  
-    margin-bottom: 20px;
-}
-
-.contact-box {
-    background-color: #062b52;  
-    color: #fff;                
-    max-width: 600px;
-    margin: 0 auto;             
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.contact-box table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.contact-box th, .contact-box td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid rgba(255,255,255,0.3); 
-}
-
-.contact-box th {
-    font-weight: bold;
-}
-
-.footer-box a {
-    color: #fff;
-}
-.contact-heading a{
-  color:#fff
-}
-
-
-
-
-
-</style>
-
-
-
-
-
+  <footer>
     <div class="footer-box">
-      
-        <p><a>AfriGIS</strong></a></p>
-        <p><a>446 Rigel Avenue South, Erasmusrand, Pretoria, 0181, South Africa</a></p>
-        <p><a>P.O. Box 28274, Sunnyside, Pretoria, 0132</a></p>
-        <p><a>Cell: +27 87 310 6400 | Email: </a><a href="mailto:products@afrigis.co.za">products@afrigis.co.za</a></p>
+      <p>AfriGIS</p>
+      <p>446 Rigel Avenue South, Erasmusrand, Pretoria, 0181</p>
+      <p>Cell: +27 87 310 6400</p>
     </div>
-<script src="../js/script.js"></script>
-</footer>
+  </footer>
 
+  <script src="../js/script.js"></script>
 </body>
 </html>
 

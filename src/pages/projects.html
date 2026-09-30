@@ -1,58 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <link rel="stylesheet" href="../css/style.css"></link>
-   
-<title>Personal Portfolio Website with Interactive Features About</title>
-
-   </head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Sihle Genu</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
 <body>
-  
-    
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="brand">Sihle <span>Genu</span></div>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a class="active" href="./projects.html">Projects</a>
+        <a href="./contacts.html">Contact</a>
+      </div>
+      <button id="mode-toggle" class="mode-toggle" type="button">Mode</button>
+    </nav>
+  </header>
 
-    
-  
-  <button id="mode-toggle">Mode</button>
+  <main class="page-shell">
+    <section class="section">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <p>Selected work across networking, systems, and digital experiences.</p>
+      </div>
 
-<h1 style="text-align:center font-family  Verdana; background-color: rgb(20, 164, 208);color: white;">Welcome to my Projects</h1>
+      <div class="card-grid">
+        <article class="project-card">
+          <img src="../assets/images/Network project.jpg" alt="Network design project" />
+          <div class="content">
+            <h3>Corporate Network Design</h3>
+            <p>A group project where we used Cisco Packet Tracer to design a secure and structured corporate network.</p>
+            <div class="project-tags">
+              <span>Cisco</span>
+              <span>Networking</span>
+              <span>Security</span>
+            </div>
+          </div>
+        </article>
 
+        <article class="project-card">
+          <img src="../assets/images/home affairs app.jpg" alt="Home Affairs booking app" />
+          <div class="content">
+            <h3>Home Affairs Booking API</h3>
+            <p>A collaborative project that created an API allowing citizens to book appointment dates for ID-related services.</p>
+            <div class="project-tags">
+              <span>API</span>
+              <span>Team Project</span>
+              <span>Systems</span>
+            </div>
+          </div>
+        </article>
 
-  </div>
-  <div class="img-row">
+        <article class="project-card">
+          <img src="../assets/images/business website.jpg" alt="Business website project" />
+          <div class="content">
+            <h3>Business Website</h3>
+            <p>An individual web design project created for a local clothing brand to expand customer reach online.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Branding</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-    <div class="img-box">
-        <img src="../assets/images/Network project.jpg" alt="network project img" width="300" height="300">
-        <p class="img-text"> This was a group Project were by we used Cisco Packet Tracer to create a structured secured network for a corporate business.</p>
+  <footer>
+    <div class="footer-box">
+      <p>© 2026 Sihle Genu</p>
+      <p>Projects built with purpose and practicality</p>
     </div>
+  </footer>
 
-    <div class="img-box">
-        <img src="../assets/images/home affairs app.jpg" alt="home affairs app" width="300" height="300">
-        <p class="img-text">This was a group project were by we created an API to help citizens to book a date of when they can do their IDs at Home Affairs.</p>
-    </div>
-
-    <div class="img-box">
-        <img src="../assets/images/business website.jpg" alt="business website" width="300" height="300">
-        <p class="img-text"> This was an individual project, I created a business website for a local clothing brand so that it can reach a wide variety of customers.</p>
-    </div>
-
-</div>
-<div class="menu">
-  <a href="./index.html">Home</a>
-  <a href="./about.html">About</a>
-  <a href="./contacts.html">Contact</a>
-  <a href="./projects.html">Projects</a>
-
-</div>
-<script src="../js/script.js"></script>
-
-
-
-
+  <script src="../js/script.js"></script>
 </body>
-
-
-
-
-
-
 </html>

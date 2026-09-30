@@ -1,72 +1,96 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<title>Personal Portfolio Website with Interactive Features
-</title>
- <link rel="stylesheet" href="../css/style.css"></link>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sihle Genu | Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="brand">Sihle <span>Genu</span></div>
+      <div class="nav-links">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contacts.html">Contact</a>
+      </div>
+      <button id="mode-toggle" class="mode-toggle" type="button">Mode</button>
+    </nav>
+  </header>
 
-<div></div>
-<div style="
-    background-color:rgb(6, 76, 96);
-    animation: move-left 5s linear infinite;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 15px;
-    display: inline-block;
-    font-family: Verdana;
-    font-size: 22px;
-">
-    AfriGIS
-</div>
-<button id="mode-toggle">Mode</button>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">System Developer</span>
+        <h1>Building smart digital <span>solutions</span> that work.</h1>
+        <p>
+          I’m a developer focused on creating clean, practical, and scalable systems that improve user experiences and drive meaningful results.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="./projects.html">View Projects</a>
+          <a class="secondary-btn" href="./contacts.html">Let’s Connect</a>
+        </div>
 
-<div class="menu"> 
-  <a href="./index.html" style="text-decoration: underline;">Home</a>
-  <a href="./about.html">About</a>
-  <a href="./contacts.html">Contact</a>
-  <a href="./projects.html">Projects</a>
-</div>
+        <div class="hero-metrics">
+          <div class="metric">
+            <strong>2+</strong>
+            <span>Years of growth</span>
+          </div>
+          <div class="metric">
+            <strong>5+</strong>
+            <span>Core skills</span>
+          </div>
+          <div class="metric">
+            <strong>100%</strong>
+            <span>Driven by learning</span>
+          </div>
+        </div>
+      </div>
 
+      <aside class="profile-card">
+        <img src="../assets/images/IMG225.JPEG" alt="Portrait of Sihle Genu" />
+        <div class="profile-badge">Available for software and web opportunities</div>
+      </aside>
+    </section>
 
-<style>
+    <section class="section">
+      <div class="section-heading">
+        <h2>What I bring</h2>
+      </div>
 
-.center-screen {
-            height: 80vh;           
-            display: flex;           
-            justify-content: center; 
-            align-items: center;     
-        }
+      <div class="card-grid">
+        <article class="info-card">
+          <div class="icon">💻</div>
+          <h3>Web Development</h3>
+          <p>I build responsive, user-friendly interfaces using HTML, CSS, and JavaScript.</p>
+        </article>
 
-        .center-screen img {
-            width: 500px;                 
-            border-radius: 8px;  
-        }
+        <article class="info-card">
+          <div class="icon">⚙️</div>
+          <h3>System Thinking</h3>
+          <p>I enjoy solving technical problems by designing reliable systems that scale smoothly.</p>
+        </article>
 
-</style>
-    <h1 style="color: rgb(2, 52, 69);text-align:center;font-family:Verdana;color: rgb(2, 52, 69);border-radius: 8px; ">Employee profile:</h1>
+        <article class="info-card">
+          <div class="icon">📈</div>
+          <h3>Continuous Improvement</h3>
+          <p>I stay current with industry trends and aim to deliver quality work with purpose.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-<div class="center-screen">
-    <img src="../assets/images/IMG225.JPEG" alt="IM225" width="500" height="500" style="border: 3px solid rgb(1, 2, 12);">
-</div>
-<div class="menu">
-  <a href="./index.html" style="text-decoration: underline;">Home</a>
-  <a href="./about.html">About</a>
-  <a href="./contacts.html">Contact</a>
-  <a href="./projects.html">Projects</a>
+  <footer>
+    <div class="footer-box">
+      <p>© 2026 Sihle Genu</p>
+      <p>System Developer | Problem Solver | Learner</p>
+    </div>
+  </footer>
 
-</div>
-<script src="../js/script.js"></script>
-
-
-
-
+  <script src="../js/script.js"></script>
 </body>
-
-   
-
 </html>
 
 
